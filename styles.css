@@ -1,0 +1,46 @@
+td {
+  border: 1px solid #888;
+  text: transparent;
+}
+.Yes {
+  background: green;
+}
+.No {
+  background: red;
+}
+.Partial {
+  background: orange;
+}
+
+table {
+  overflow: hidden;
+}
+
+tr:hover {
+  border: 5px black solid;
+}
+
+td, th {
+  position: relative;
+}
+td:hover::after,
+th:hover::after {
+  content: "";
+  position: absolute;
+  border: 5px black solid;
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
+td:hover {
+  background: white;
+}
+td {
+  opacity: .8;
+}
+
+.unDim {
+  opacity: 1
+}
